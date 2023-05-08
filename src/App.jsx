@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -30,12 +31,13 @@ function App() {
   return (
     <div>
       <h1>Simple Crud</h1>
-
       <form onSubmit={handleAddUser}>
         <input type="text" name="name" id="" />
         <input type="email" name="email" id="" />
         <input type="submit" value="Add User" />
       </form>
+      <Link to="/users">Go to users page</Link> <br />
+      <Link to="/update">Go to user update page</Link>
     </div>
   );
 }

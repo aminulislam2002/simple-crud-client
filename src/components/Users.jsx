@@ -25,6 +25,7 @@ const Users = () => {
   return (
     <div>
       <h2>Users {users.length}</h2>
+      <Link to="/">Go to add user page</Link>
       <div>
         {users.map((user) => (
           <p key={user._id}>
